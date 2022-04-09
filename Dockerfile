@@ -1,10 +1,5 @@
 FROM ubuntu:20.04
 
-LABEL       author="David Ignatenko" maintainer="alphabaqpla@outlook.com"
-
-LABEL       org.opencontainers.image.source="https://github.com/AlphaBaqpla/winehq-docker"
-LABEL       org.opencontainers.image.licenses=MIT
-
 
 RUN apt update && \
 apt install -y wget software-properties-common && \
@@ -16,10 +11,6 @@ apt install winehq-stable -y && \
 apt remove -y wget software-properties-common  && \
 apt autoremove -y && \
 apt clean
-
-USER        container
-ENV         USER=container HOME=/home/container
-ENV         DEBIAN_FRONTEND noninteractive
 
 WORKDIR     /home/container
 
