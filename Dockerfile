@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-LABEL       author="David Ignatenko" maintainer="alphabaqpla@outlook.com"
+LABEL       author="David Ignatenko da" maintainer="alphabaqpla@outlook.com"
 
 LABEL       org.opencontainers.image.source="https://github.com/AlphaBaqpla/winehq-docker"
 LABEL       org.opencontainers.image.licenses=MIT
